@@ -11,7 +11,7 @@ First, it is checked whether there is a language registered in Hive. If the user
 - hive_flutter: ^1.1.0
 - timezone: ^0.9.0
 
-## Screen shots
+## Screenshots
 Home page in turkish language & Selected language page in turkish language
 <p align="center">
   <img src="https://github.com/Cengizhanerturan/getx_localization_tutorial/assets/51836459/f918ab97-0792-4c8f-89bc-5bd7c8bc5bbe" width="350" title="Home page in turkish language">
