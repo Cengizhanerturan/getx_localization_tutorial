@@ -1,4 +1,4 @@
-import 'dart:convert';
+import 'package:getx_localization_tutorial/core/util/formatter.dart';
 
 class LanguageModel {
   final String symbol;
@@ -31,23 +31,9 @@ class LanguageModel {
 
   static LanguageModel? decoder(dynamic data) {
     try {
-      var decode = apiDecode(data);
+      var decode = Formatter.apiDecode(data);
       return LanguageModel.fromJson(decode);
     } catch (e) {
-      return null;
-    }
-  }
-
-  static dynamic apiDecode(dynamic data) {
-    if (data is String) {
-      try {
-        return jsonDecode(data);
-      } catch (e) {
-        return null;
-      }
-    } else if (data is Map || data is List) {
-      return data;
-    } else {
       return null;
     }
   }
